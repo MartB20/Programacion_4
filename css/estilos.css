@@ -1,0 +1,638 @@
+/*start of css reset*/
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*end of css reset*/
+
+body {
+	background-color: #000;
+	font-family: 'Cardo';
+	font-size: 24px;
+	color: #2D1B19;
+	text-align:justify;
+	background-image: url(../images/fondo1-2.jpg);
+	background-repeat: repeat-y;
+	width: 100%;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: #110600;
+	background-image: url(../images/tree-trunk2.jpg);
+	border-bottom: 3px solid #bd812c;
+}
+header a {
+	margin-top: 1em;
+	padding-left: 5%;
+	padding-bottom: 1%;
+}
+nav ul{
+	margin-top: 2.5rem;
+	font-weight:400;
+}
+nav ul li{
+	display: inline-block;
+	padding-right: 3.5rem;
+}
+nav ul li a{
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #f3bb6c;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #fff0b3;
+}
+a{
+	color: #f3bb6c;
+}
+a:hover{
+	color: #fff0b3;
+}
+.dropbtn{
+	color: #f3bb6c;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	background-color: transparent;
+	border:transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-image: url(../images/tree-trunk1.jpg);	
+}
+
+.dropdown-content a {
+	color: #f3bb6c;
+	padding: 0.5em;
+	text-decoration: none;
+	display: block;
+}
+
+@media (hover: hover) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border: 3px solid #bd812c;
+	margin-left: 20%;
+  }
+}
+
+.icon {
+	display: none;
+}
+p {
+	margin-left: 3em;
+	margin-right: 6em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+}
+h1 {
+	padding-bottom: 0.5em;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 1em;
+	padding-right:2em;
+}
+h2 {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right:3em;
+}
+section {
+	margin-left: 3em;
+	margin-right: auto;
+	background-repeat: repeat-y;
+}
+form{
+	margin-bottom: 2em;
+	padding:1em;
+	background-image: url(../images/tree-trunk1.jpg);
+	color: #fcca84;
+	border:5px solid #2D1B19;
+}
+form button {
+	margin-top: 1em;
+	margin-left: 5.5em;
+	color: #fcca84;
+	background-color: #2D1B19;
+}
+.contacto{
+	display: flex;
+	margin-right: 5em;
+}
+.contacto p{
+	padding-left:0em;
+	padding-right: 0em;
+	margin-left: 7em;
+	margin-right: 2em;
+}
+.contacto img{
+	width:60%;
+	margin-left:7.5em;
+	border: 3px solid #5a4434;
+}
+
+#mini-cont{
+	display: block;
+}
+.formulario{
+/*	display:flex;	*/
+	margin-right: 6em;
+}
+.formulario textarea, input{
+	background-color:#d7cabb;
+	border: 3px #7d7064 solid;
+}
+.descripcion{
+	display:flex;
+}
+.descripcion img {
+	margin-right: 1.5em;
+	margin-left: 8em;
+	margin-bottom: 2em;
+	border: 3px solid #5a4434;
+}
+.descripcion p{
+	margin:0em;
+	padding-left:0em;
+	margin-right:7em;
+	text-align:left;
+}
+.right-descripcion{
+	display: flex;
+}
+.right-descripcion img{
+	margin-right: 10em;
+	margin-left: 1.5em;
+	margin-bottom: 2em;
+	border: 3px solid #5a4434;
+}
+.right-descripcion p{
+	padding:0em;
+	margin-right:0em;
+	margin-left:8em;
+	margin-bottom:1em;
+	text-align:left;
+}
+.episodio img {
+	padding-right: 0em;
+	padding-left: 0em;
+	padding-bottom: 0em;
+	border: 3px solid #5a4434;
+	margin-left: 12em;
+	margin-bottom: 1em;
+}
+.episodio article{
+	padding-bottom: 1em;
+}
+.principal {
+	padding-bottom: 1em;
+	padding-left: 8em;
+	width: 80%;
+}
+.personajes {
+	display: flex;
+	font-size: 32px;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.personajes article {
+	margin-left: 80px;
+	margin-right: 30px;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+.personajes p {
+	text-align: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0em;
+	padding-right: 0em;
+	padding-bottom: 0em;
+}
+.personajes img {
+	padding-right:0em;
+	padding-left:0em;
+}
+.principal div img{
+	width: 70%;
+}
+.secundario{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	margin-left: 6.2em;
+}
+.secundario img{
+	width:60%;
+	margin-bottom: 1em;
+	border-radius: 25px;
+	border: 3px solid #5a4434;
+}
+.secundario img:hover{
+	filter:brightness(125%);
+}
+footer {
+	align-items: center;
+	background-image: url(../images/tree-trunk2.jpg);
+	border-top: 3px solid #bd812c;
+}
+footer div {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top:2em;
+	padding-bottom:2em;
+}
+footer p {
+	color: #fcca84;
+	text-align:center;
+	font-size:18px;
+}
+
+.bottom{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+		/*	BREAKPOINT PARA CELULARES	 */
+@media (max-width: 767px) {
+body{
+	text-align:left;
+	background-image: url(../images/mini-fondo.jpg);;
+}
+header{
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+header a{
+	margin-top:0.5em;
+}
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	flex-basis: 100%;
+}
+.icon {
+	display: block;
+	padding-right: 0.6rem;
+	text-align: right;
+}
+.dropdown-content.show {
+	display: block;
+	border: 3px solid #bd812c;
+	margin-left: 3em;
+}
+h1{
+	padding-right:0em;
+}
+p {
+	padding-left: 0em;
+	padding-right: 0em;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+}
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
+}
+.dropbtn{
+	margin-left: 1.5em;
+}
+section {
+/*	max-width: 480px;	*/
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+/*	background-image: url(../images/mini-fondo.jpg);	*/
+}
+.principal {
+	padding:1em;
+	width:100%;
+}
+.secundario{
+	margin-top: 1%;
+	display:flex;
+	margin-left: 5em;
+}
+.secundario img {
+	height: 85%;
+}
+.personajes{
+	display:block;
+	font-size:24px;
+}
+.personajes article{
+	margin-left:0em;
+	padding-bottom:2em;
+	padding-right:0em;
+}
+.personajes img{
+	width:85%;
+	height:75%;
+	padding-left:1em;
+}
+.episodio img{
+	margin-left: 0em;
+	width:100%;
+	height:75%;
+}
+.descripcion{
+	display:block;
+}
+.descripcion p{
+	margin-left:2em;
+	margin-right:1em;
+}
+.descripcion img{
+	margin-left:2em;
+}
+.right-descripcion{
+	display:block;
+	padding-bottom: 1em;
+}
+.right-descripcion p{
+	margin-left:2em;
+	margin-right:1em;
+}
+.right-descripcion img{
+	margin-left:2em;
+}
+h2{
+	font-size: 36px;
+	padding-right: 0em;
+}
+a img{
+	margin-right:0em;
+}
+.contacto{
+	display: block;
+	margin-right: 0em;
+}
+.contacto p{
+	margin:0em;
+	padding:0em;
+	margin-left: 1.5em;
+    margin-right: 0.5em;
+}
+form{
+	margin-top:4em;
+	margin-bottom:0em;
+	margin-right: 0.5em;
+    margin-left: 0.5em;
+	text-align: center;
+}
+form button{
+	margin-left: 0em;
+}
+.formulario{
+	display:block;
+	margin-right: 0em;
+	padding-bottom: 2em;
+}
+.contacto img{
+	display:none;
+}
+footer p{
+	padding-bottom:0em;
+	line-height:initial;
+	margin-left:10px;
+	margin-right:10px;
+}
+}
+.bottom{
+	position: static;
+	bottom: auto;
+}
+		/*	BREAKPOINT PARA TABLETS	*/
+@media (min-width: 768px) and (max-width: 1023px){
+header{
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+header a{
+	margin-top:0.5em;
+}
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	flex-basis: 100%;
+}
+.icon {
+	display: block;
+	padding-right: 0.6rem;
+	text-align: right;
+}
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+}
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
+}
+.dropbtn{
+	margin-left: 1.5em;
+}
+.dropdown-content.show {
+	display: block;
+	border: 3px solid #bd812c;
+	margin-left: 35%;
+}
+body{
+	background-size: 100%;
+}
+section{
+	width: 100%;
+}
+h1{
+	padding-right: 3.5em;
+}
+p{
+	margin-left: 0em;
+	margin-right: 6em;
+	padding: 0em;
+}
+.principal{
+	margin-left: 1.5em;
+	margin-bottom: 1em;
+	padding: 0em;
+}
+.episodio img{
+	margin-left: 2.5em;
+}
+.descripcion img{
+	margin-left: 0em;
+}
+.descripcion p{
+	margin-right: 3em;
+}
+.right-descripcion p{
+	margin-left: 0em;
+}
+.right-descripcion img{
+	margin-right: 5em;
+    margin-left: 1rem;
+}
+.secundario{
+	margin-left: 4em;
+}
+.contacto img{
+	display:none;
+}
+.contacto{
+	display: block;
+}
+.contacto p{
+	margin-left: 1em;
+}
+.formulario{
+	display:block;
+	margin-right: 4em;
+    padding-bottom: 2em;
+    margin-left: 4em;
+}
+form{
+	margin-top:2em;
+	margin-bottom:0em;
+	margin-right: 0.5em;
+    margin-left: 0.5em;
+	text-align: center;
+}
+form button{
+	margin-left: 0em;
+}
+}
+		/*	BREAK POINTS PARA COMPUTADORAS PEQUEÑAS	*/
+@media (min-width: 1024px) and (max-width: 1300px) {
+nav ul li{
+	padding-right: 3rem;
+}
+nav ul li a{
+	font-size:1rem;
+}
+.dropbtn{
+	font-size:1rem;
+}
+body{
+	background-size: 98%;
+}
+.episodio img{
+	margin-left:6em;
+}
+.descripcion img{
+	margin-left:4em;
+}
+.descripcion p{
+	margin-right:4em;
+}
+.right-descripcion p{
+	margin-left:4em;
+}
+.right-descripcion img{
+	margin-right:6em;
+}
+.formulario{
+	margin-right:1em;
+	margin-top: 2em;
+    margin-bottom: 2em;
+}
+.contacto p{
+	margin-left:4em;
+	margin-top: 1.5em;
+}
+.contacto img{
+	width: 75%;
+    margin-left: 3.5em;
+}
+}

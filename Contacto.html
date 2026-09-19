@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e8e9e5aa7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Producción en clase: Más allá del jardín</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/mini-logo-1.png" alt="logo de Over the Garden Wall"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-list"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="Episodios.html">Episodios</a></li>
+                <li class="dropdown"><button class="dropbtn" onclick="toggleDropdown(event)" >Personajes</button>
+                    <div class="dropdown-content">
+                        <a href="Protagonistas.html">Protagonistas</a>
+                        <a href="Bosque.html">El Bosque</a>
+                        <a href="Casa.html">La Ciudad</a>
+                    </div>
+                </li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Creador.html">Creador</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Formulario de Contacto</h1>
+    <article class="contacto">
+        <article id="mini-cont">
+            <p>
+                En caso de que encuentre problemas con el sitio, o tenga alguna sugerencia sobre su contenido, por favor envie un mensaje usando el siguiente
+                formulario.
+            </p>
+        
+                <img src="images/apuntando.webp" alt="greg apuntando al formulario" />
+        </article>
+        <article class="formulario">
+            <form action="#" method="post">
+                <label>E-mail: </label>
+                <input type="email" name="email" required maxlength="50"/><br>
+                <label>
+                    Mensaje: <br>
+                    <textarea rows="5" cols="20" name="mensaje" maxlength="250"></textarea>
+                </label><br>
+                <button>Enviar</button>
+            </form>
+        </article>
+    </article>
+    </section>
+    <footer class="bottom">
+        <div>
+        <a href="https://facebook.com"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+            <p> Fanpage de Más allá del jardín - 2026 - Sitio realizado por M. B. Pinto </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+        function toggleDropdown(event) {
+            event.stopPropagation(); // Evita que el clic se propague al documento
+            var dropdown = event.target.nextElementSibling;
+            dropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e8e9e5aa7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Producción en clase: Más allá del jardín</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/mini-logo-1.png" alt="logo de Over the Garden Wall"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-list"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="Episodios.html">Episodios</a></li>
+                <li class="dropdown"><button class="dropbtn" onclick="toggleDropdown(event)" >Personajes</button>
+                    <div class="dropdown-content">
+                        <a href="Protagonistas.html">Protagonistas</a>
+                        <a href="Bosque.html">El Bosque</a>
+                        <a href="Casa.html">La Ciudad</a>
+                    </div>
+                </li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Creador.html">Creador</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Gente del Bosque </h1>
+        <p>
+            En esta pagina se presentaran a personajes recurrentes que Wirt y Greg conocen durante su travesía por el bosque; si se desea
+            saber que ocurre a cada uno en el transcurso de la serie dirijase a la pagina "Episodios".
+        </p>
+        <h2>El Leñador</h2>
+        <article class="descripcion">
+            <img src="images/leñador.jpg" alt="el leñador mira a la camara asustado" />
+            <p>
+                La primera persona con la que se encuentran los hermanos despues de despertar en el bosque.
+                Es un hombre brusco que se dedica a cortar los arboles del bosque para procesar su madera y hacer un aceite para mantener 
+                prendido su <strong>farol</strong>. <br>
+                Comienza la serie ayudando a los hermanos, pero, debido a su misteriosa relacion con <strong>La Bestia</strong>, 
+                pierde su confianza y Wirt lo considera un enemigo por la mayor parte de la historia.<br>
+                Su voz pertenece al actor de doblaje Rubén Trujillo en Hispanoamerica, y a Luis Mas en España.                                
+            </p>
+        </article>
+        <h2>Beatrice</h2>
+        <article class="right-descripcion">
+            <p>
+                Una Azuleja que los hermanos encuentran atrapada en un arbusto, al salvarla ella decide guiarlos a la casa de 
+                <strong>Adelaide de la Pastura</strong>, la mujer buena del bosque, para ayudarlos a volver a casa.<br>
+                Mas tarde, su amistad con los hermanos hace que les cuente su historia y que los salve de Adelaide. Incluso acompañando a Wirt
+                cuando decide enfrentar a La Bestia. <br>
+                Su voz pertenece a la actriz de doblaje Gaby Cárdenas en Hispanoamerica, y a Michelle Jenner en España.   
+            </p>
+            <img src="images/beatrice2.jpg" alt="Beatrice mirando a la camara" />
+        </article>
+        <h2>La Bestia</h2>
+        <article class="descripcion">
+            <img src="images/la_bestia.jpg" alt="la bestia aparece entre las sombras" />
+            <p>
+                Una bestia que hacecha las partes mas oscuras del bosque, alimentandose de 
+                <strong>las almas perdidas atrapadas en los arboles</strong>.<br>
+                A pesar de que los hermanos no se la encuentran hasta el final de la serie, La bestia los sigue de cerca en todo momento; al punto 
+                de que en cuanto Wirt comienza a perder esperanza, las ramas de los arboles del bosque comienzan a crecer sobre el, para facilitar 
+                su consumo.<br>
+                Tambien esta muy presente en la historia del Leñador, ya que La Bestia fue quien le dio su farol y responsabilidad.<br>
+                Su voz pertenece al actor de doblaje Ulises Maynardo Zavala en Hispanoamerica, y a Pedro Tena en España.  
+            </p>
+        </article>
+    </section>
+    <footer>
+        <div>
+        <a href="https://facebook.com"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+            <p> Fanpage de Más allá del jardín - 2026 - Sitio realizado por M. B. Pinto </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+        function toggleDropdown(event) {
+            event.stopPropagation(); // Evita que el clic se propague al documento
+            var dropdown = event.target.nextElementSibling;
+            dropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

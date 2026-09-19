@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e8e9e5aa7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Producción en clase: Más allá del jardín</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/mini-logo-1.png" alt="logo de Over the Garden Wall"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-list"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="Episodios.html">Episodios</a></li>
+                <li class="dropdown"><button class="dropbtn" onclick="toggleDropdown(event)" >Personajes</button>
+                    <div class="dropdown-content">
+                        <a href="Protagonistas.html">Protagonistas</a>
+                        <a href="Bosque.html">El Bosque</a>
+                        <a href="Casa.html">La Ciudad</a>
+                    </div>
+                </li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Creador.html">Creador</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Amigos de la Ciudad </h1>
+        <p>
+            En esta pagina se presentaran a personajes que Wirt y Greg conocian antes de encontrarse en el bosque; si se desea
+            saber que ocurre a cada uno en el transcurso de la serie dirijase a la pagina "Episodios".
+        </p>
+        <h2>Sara</h2>
+        <article class="descripcion">
+            <img src="images/sara.webp" alt="Sara confundida" />
+            <p>
+                Una amiga de Wirt y la chica que le gusta. <br>
+                Trabaja como mascota del equipo de futbol americano de su escuela con un disfraz de abeja, pero pasa la mayor parte 
+                los episodios en los que aparece en su disfraz de payaso para Halloween. A pesar de los nervios de Wirt, ella parece estar 
+                interesada en él<br>
+                Su voz pertenece a la actriz de doblaje Andrea Orozco en Hispanoamerica, y a Belén Rodríguez en España.                                
+            </p>
+        </article>
+        <h2>La Rana</h2>
+        <article class="right-descripcion">
+            <p>
+                Una rana que Greg encontro antes de llegar al bosque, aún no decidio su nombre asi que tiene uno nuevo cada episodio.<br>
+                Comienza la serie comportandose como una rana comun y corriente, pero durante el transcurso de la serie comienza a demostrar rasgos
+                mas propios de los habitantes del bosque, como el caminar sobre sus patas traseras e incluso hablar.
+                Su voz pertenece al actor de doblaje Dan Osorio en Hispanoamerica, y a José Escoboso en España. 
+            </p>
+            <img src="images/rana.webp" alt="la rana siendo levantada por Greg" />
+        </article>
+        <h2>Jason Funderberker</h2>
+        <article class="descripcion">
+            <img src="images/jason.jpg" alt="Jason mirando hacia la camara" />
+            <p>
+                Un amigo de Sara y rival de Wirt.<br>
+                Al igual que Wirt, Jason esta enamorado de Sara; pero, a diferencia de Wirt, Jason esta convencido de que Sara preferiria salir con
+                él antes que con Wirt, y no para de intentar invitarla a salir durante todo Halloween.<br>
+                Su voz pertenece al actor de doblaje Abraham Vega en Hispanoamerica.  
+            </p>
+        </article>
+    </section>
+    <footer>
+        <div>
+        <a href="https://facebook.com"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+            <p> Fanpage de Más allá del jardín - 2026 - Sitio realizado por M. B. Pinto </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+        function toggleDropdown(event) {
+            event.stopPropagation(); // Evita que el clic se propague al documento
+            var dropdown = event.target.nextElementSibling;
+            dropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e8e9e5aa7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Producción en clase: Más allá del jardín</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/mini-logo-1.png" alt="logo de Over the Garden Wall"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-list"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="Episodios.html">Episodios</a></li>
+                <li class="dropdown"><button class="dropbtn" onclick="toggleDropdown(event)" >Personajes</button>
+                    <div class="dropdown-content">
+                        <a href="Protagonistas.html">Protagonistas</a>
+                        <a href="Bosque.html">El Bosque</a>
+                        <a href="Casa.html">La Ciudad</a>
+                    </div>
+                </li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Creador.html">Creador</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Patrick McHale </h1>
+        <article class="right-descripcion">
+            <p>
+                Nacido el 17 de Noviembre de 1983, <strong>Patrick Nolen McHale</strong> es un animador, guionista, director y músico 
+                estadounidense. 
+<!--                Cuyo primer gran triunfo en la industria del entretenimiento fue <strong>Más Allá del Jardín.</strong>--><br>
+
+                Más Allá del Jardín se desarrolló a partir de un cortometraje previo de Patrick, llamado <strong>Tome of the Unknown</strong>, 
+                basado en el folklore de los hermanos Grimm y los cortometrajes más antiguos de Walt Disney. <!--
+                Este cortometraje ganó el premio por mejor cortometraje animado del <strong>Festival Internacional de Cine de Santa Bárbara.</strong>
+            --><br>
+<!--                Antes de desarrollar esta miniserie, se destacó como escritor en <strong>Las maravillosas desventuras de Flapjack</strong> y como 
+                director creativo durante la segunda temporada de <strong>Hora de Aventura.</strong><br>    -->
+            
+                Despues del exito de la serie, Patrick McHale co-escribio la adaptacion de <strong>Pinocho de Guillermo del Toro</strong>, 
+                ayudó a desarrollar la pelicula de Hora de Aventura, y colaboró con Aardman Animations para crear un cortometraje de 
+                stop motion basado en Más Allá del Jardín para su aniversario de diez años.
+            </p>
+            <img src="images/Patrick_McHale1.webp" alt="El creador de Más Allá del Jardín, Patrick McHale" />
+        </article>
+    </section>
+    <footer>
+        <div>
+        <a href="https://facebook.com"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+            <p> Fanpage de Más allá del jardín - 2026 - Sitio realizado por M. B. Pinto </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+        function toggleDropdown(event) {
+            event.stopPropagation(); // Evita que el clic se propague al documento
+            var dropdown = event.target.nextElementSibling;
+            dropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

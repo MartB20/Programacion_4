@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e8e9e5aa7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Producción en clase: Más allá del jardín</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/mini-logo-1.png" alt="logo de Over the Garden Wall"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-list"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="Episodios.html">Episodios</a></li>
+                <li class="dropdown"><button class="dropbtn" onclick="toggleDropdown(event)" >Personajes</button>
+                    <div class="dropdown-content">
+                        <a href="Protagonistas.html">Protagonistas</a>
+                        <a href="Bosque.html">El Bosque</a>
+                        <a href="Casa.html">La Ciudad</a>
+                    </div>
+                </li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Creador.html">Creador</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Protagonistas </h1>
+        <p>
+            En esta pagina se presentaran a los dos hermanos que protagonizan la serie, Wirt y Greg; si se desea
+            saber que ocurre a cada uno en el transcurso de la serie dirijase a la pagina "Episodios".
+        </p>
+        <h2>Wirt</h2>
+        <article class="descripcion">
+            <img src="images/Wirt.jpg" alt="Wirt apoyado en el borde de una cerca" />
+            <p>
+                El <strong>protagonista</strong> principal de la serie, un adolescente que intenta regresar a casa lo más pronto posible.
+                Se encuentra en esta aventura con su hermanastro <strong>Greg</strong>, con quien entra en conflicto debido a sus diferentes 
+                formas de ver el mundo.<br>
+                Tiene un caracter pesimista, y tiende a pensar lo peor de todas las situaciones con las que se enfrentan en su aventura,
+                al punto que dificultan su progreso en la mayoria de ellas.<br>
+                Su voz pertenece al actor de doblaje Gerardo Velazques en Hispanoamerica, y a Miguel Antelo en España
+            </p>
+        </article>
+        <h2>Greg</h2>
+        <article class="right-descripcion">
+            <p>
+                El protagonista secundario de la serie, un niño que recientemente adopto una rana y busca divertirse en cualquier situacion.<br>
+                A diferencia de <strong>Wirt</strong>, Greg no siente ningun tipo de enojo o envidia hacia su hermano, y 
+                lo considera un excelente lider y ejemplo a seguir. Sigue los planes que dicta su hermano y, aunque su ejecucion no es siempre 
+                la mas convencional, suele tener buenos resultados.<br>
+                Su voz pertenece al actor de doblaje Abdeel Silva en Hispanoamerica, y a Neri Hualde en España
+            </p>
+            <img src="images/Greg.jpg" alt="greg saludando a la camara" />
+        </article>
+    </section>
+    <footer>
+        <div>
+        <a href="https://facebook.com"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+            <p> Fanpage de Más allá del jardín - 2026 - Sitio realizado por M. B. Pinto </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+        function toggleDropdown(event) {
+            event.stopPropagation(); // Evita que el clic se propague al documento
+            var dropdown = event.target.nextElementSibling;
+            dropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
