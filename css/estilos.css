@@ -388,10 +388,6 @@ section {
 	margin-right: auto;
 /*	background-image: url(../images/mini-fondo.jpg);	*/
 }
-.principal {
-	padding:1em;
-	width:100%;
-}
 .secundario{
 	margin-top: 1%;
 	display:flex;
