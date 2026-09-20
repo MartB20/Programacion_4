@@ -66,6 +66,11 @@ body {
 	background-image: url(../images/fondo1-2.jpg);
 	background-repeat: repeat-y;
 	width: 100%;
+
+/*	para que el footer se mantenga al final de la pagina	*/
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header {
 	display: flex;
@@ -81,6 +86,9 @@ header a {
 	margin-top: 1em;
 	padding-left: 5%;
 	padding-bottom: 1%;
+}
+header img{
+	border: none;
 }
 nav ul{
 	margin-top: 2.5rem;
@@ -142,6 +150,9 @@ a:hover{
 .icon {
 	display: none;
 }
+img{
+	border: 3px solid #5a4434;
+}
 p {
 	margin-left: 3em;
 	margin-right: 6em;
@@ -167,6 +178,8 @@ section {
 	margin-left: 3em;
 	margin-right: auto;
 	background-repeat: repeat-y;
+/*	para que el footer se mantenga al final de la pagina	*/
+	flex: 1;
 }
 form{
 	margin-bottom: 2em;
@@ -194,7 +207,6 @@ form button {
 .contacto img{
 	width:60%;
 	margin-left:7.5em;
-	border: 3px solid #5a4434;
 }
 
 #mini-cont{
@@ -215,7 +227,6 @@ form button {
 	margin-right: 1.5em;
 	margin-left: 8em;
 	margin-bottom: 2em;
-	border: 3px solid #5a4434;
 }
 .descripcion p{
 	margin:0em;
@@ -230,7 +241,6 @@ form button {
 	margin-right: 10em;
 	margin-left: 1.5em;
 	margin-bottom: 2em;
-	border: 3px solid #5a4434;
 }
 .right-descripcion p{
 	padding:0em;
@@ -243,7 +253,6 @@ form button {
 	padding-right: 0em;
 	padding-left: 0em;
 	padding-bottom: 0em;
-	border: 3px solid #5a4434;
 	margin-left: 12em;
 	margin-bottom: 1em;
 }
@@ -251,9 +260,10 @@ form button {
 	padding-bottom: 1em;
 }
 .principal {
-	padding-bottom: 1em;
-	padding-left: 8em;
-	width: 80%;
+	margin-left: 12%;
+	margin-bottom: 5%;
+	padding: 0em;
+	width: 70%;
 }
 .personajes {
 	display: flex;
@@ -292,7 +302,6 @@ form button {
 	width:60%;
 	margin-bottom: 1em;
 	border-radius: 25px;
-	border: 3px solid #5a4434;
 }
 .secundario img:hover{
 	filter:brightness(125%);
@@ -312,12 +321,6 @@ footer p {
 	color: #fcca84;
 	text-align:center;
 	font-size:18px;
-}
-
-.bottom{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
 }
 		/*	BREAKPOINT PARA CELULARES	 */
 @media (max-width: 767px) {
@@ -479,10 +482,6 @@ footer p{
 	margin-right:10px;
 }
 }
-.bottom{
-	position: static;
-	bottom: auto;
-}
 		/*	BREAKPOINT PARA TABLETS	*/
 @media (min-width: 768px) and (max-width: 1023px){
 header{
@@ -544,7 +543,7 @@ p{
 	padding: 0em;
 }
 .principal{
-	margin-left: 1.5em;
+	margin-left: 8%;
 	margin-bottom: 1em;
 	padding: 0em;
 }
@@ -555,7 +554,7 @@ p{
 	margin-left: 0em;
 }
 .descripcion p{
-	margin-right: 3em;
+	margin-right: 6em;
 }
 .right-descripcion p{
 	margin-left: 0em;
@@ -565,7 +564,7 @@ p{
     margin-left: 1rem;
 }
 .secundario{
-	margin-left: 4em;
+	margin-left: 5%;
 }
 .contacto img{
 	display:none;
