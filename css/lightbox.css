@@ -32,7 +32,7 @@ body.lb-disable-scrolling {
   border-radius: 3px;
 
   /* Image border */
-  border: 4px solid white;
+  border: 4px solid #402a18;
 }
 
 a img {
@@ -54,7 +54,7 @@ a img {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-color: #402a18;
 }
 
 .lb-outerContainer:after {
@@ -158,7 +158,7 @@ a img {
 
 .lb-data {
   padding: 0 4px;
-  color: #ccc;
+  color: #f3bb6c;
 }
 
 .lb-data .lb-details {
@@ -183,7 +183,7 @@ a img {
   clear: left;
   padding-bottom: 1em;
   font-size: 12px;
-  color: #999999;
+  color: #bd812c;
 }
 
 .lb-data .lb-close {
